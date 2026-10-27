@@ -18,7 +18,7 @@
 <div class="footer">Animal Welfare Management System · © AGTech Solutions</div>
 </main><div class="bottom hidden" id="bottomBar"><button class="btn" onclick="openModule('New Entry')">＋ New entry</button></div>
 <script>
-const API_URL='https://script.google.com/macros/s/AKfycbx4BBhWQkDrdFHdnj6mBTupVEWzzlAefzbA1517P8HYiJp4oSHTxye_cVq2VrbAg0Fyzw/exec'; const ORG_NAME='Sporsho (Touch the Animals)'; const COPYRIGHT='AGTech Solutions';
+const API_URL='https://script.google.com/macros/s/AKfycbywMuPeW6J1kDX_ga4JexAg5lDstOc16OgY20poomChqBHSBbd35RKQfHTDJf9VUl1EbA/exec';
 let sessionToken='', currentUser=null, activeModule='', callbackCounter=0, callbacks={}, isDemo=false, demoRecords=[];
 document.documentElement.style.setProperty('--org-watermark','"'+ORG_NAME.toUpperCase()+'"');
 function demoLogin(role='Admin'){isDemo=true;sessionToken='DEMO-LOCAL';currentUser={email:'demo+'+role.toLowerCase()+'@local.demo',role,name:'Demo '+role,demo:true};localStorage.setItem('aw_demo_mode','1');showApp();document.getElementById('modulePanel').classList.add('hidden');msg('syncStatus','DEMO MODE ('+role+'): sample data only. Demo entries remain on this device and are not synced.');document.getElementById('syncStatus').classList.remove('hidden');loadDashboard()}
